@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lakshman — The Series | Portfolio</title>
+<meta name="description" content="Naga Venkata Lakshman Mucharla — MCA student, System Administration, Linux, AWS & DevOps.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- 1. INTRO -->
+<section id="intro" aria-label="Intro">
+  <div class="intro-glow"></div>
+  <div class="intro-inner">
+    <h1 class="intro-title">LAKSHMAN MUCHARLA</h1>
+    <p class="intro-sub">THE SERIES</p>
+    <div class="intro-photo"><div class="avatar" data-initials="NL"></div></div>
+    <button class="btn-play-round" id="introPlay" aria-label="Play">▶ PLAY</button>
+  </div>
+  <button class="skip" id="skipIntro">SKIP INTRO</button>
+</section>
+
+<!-- 2. WHO'S WATCHING -->
+<section id="profiles" class="hidden" aria-label="Choose profile">
+  <h2>Who's watching?</h2>
+  <div class="profile-row">
+    <button class="profile" data-go="home">
+      <span class="tile tile-red"><span class="badge">NEW</span><span class="avatar sm" data-initials="NL"></span></span>
+      <strong>Lakshman Mucharla</strong><small>The full series, in order</small>
+    </button>
+    <button class="profile" data-go="resume">
+      <span class="tile tile-blue"><span class="glyph">R</span></span>
+      <strong>Recruiter</strong><small>Resume, certifications &amp; skills first</small>
+    </button>
+    <button class="profile" data-go="projects">
+      <span class="tile tile-green"><span class="glyph">&lt;/&gt;</span></span>
+      <strong>Developer</strong><small>Projects, stack &amp; GitHub first</small>
+    </button>
+    <button class="profile" data-go="about">
+      <span class="tile tile-gold"><span class="glyph">✦</span></span>
+      <strong>Creative</strong><small>The story behind the engineer</small>
+    </button>
+  </div>
+  <p class="profiles-note">Every profile watches the same true story of Lakshman Mucharla — it only changes what plays first.</p>
+</section>
+
+<!-- SITE -->
+<div id="site" class="hidden">
+
+<header id="nav">
+  <a href="#home" class="logo"><span class="logo-n">N</span> SERIES</a>
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#resume">Resume</a>
+    <a href="#moments">Achievements</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#picks">Top Picks</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Let's talk</a>
+  <button id="burger" aria-label="Menu">☰</button>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="series-tag"><span class="logo-n sm">N</span> SERIES</p>
+    <h1 class="hero-title">LAKSHMAN</h1>
+    <p class="hero-sub">THE SERIES</p>
+    <div class="meta-row">
+      <span class="chip-match">MCA '26</span><span>2024 – Present</span><span>4 Degrees</span><span>5 Certifications</span><span>1 Original</span>
+    </div>
+    <p class="hero-role">SYSTEM ADMIN &nbsp;|&nbsp; LINUX &nbsp;|&nbsp; AWS &nbsp;|&nbsp; DEVOPS</p>
+    <p class="hero-desc">A Master of Computer Applications student with a strong foundation in system administration, Linux/Windows, networking and server management — building with Django, Python, Docker and AWS, and automating with Shell scripts.</p>
+    <div class="hero-btns">
+      <a class="btn btn-light" href="#projects">▶ Play Intro</a>
+      <a class="btn btn-grey" href="assets/Lakshman_Resume.pdf" download>⬇ View Resume</a>
+      <a class="btn btn-round" href="#about" aria-label="More info">ⓘ</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="avatar xl" data-initials="NL"></div>
+    <div class="hero-badge">TOP 10<br><small>in Linux today</small></div>
+  </div>
+</section>
+
+<!-- CONTINUE EXPLORING -->
+<section class="row-sec" id="explore">
+  <h3 class="row-title">Continue Exploring</h3>
+  <div class="row-wrap">
+    <button class="row-arrow left" aria-label="Scroll left">‹</button>
+    <div class="row" id="exploreRow">
+      <a class="ep ep-1" href="#resume"><small>EPISODE 01</small><b>THE FULL STORY</b><i style="--p:100%"></i></a>
+      <a class="ep ep-2" href="#moments"><small>EPISODE 02</small><b>MY ACHIEVEMENTS</b><i style="--p:70%"></i></a>
+      <a class="ep ep-3" href="#skills"><small>EPISODE 03</small><b>MY SKILLS</b><i style="--p:55%"></i></a>
+      <a class="ep ep-4" href="#projects"><small>EPISODE 04</small><b>MY PROJECTS</b><i style="--p:40%"></i></a>
+      <a class="ep ep-5" href="#about"><small>EPISODE 05</small><b>ABOUT ME</b><i style="--p:25%"></i></a>
+      <a class="ep ep-6" href="#journey"><small>EPISODE 06</small><b>MY JOURNEY</b><i style="--p:15%"></i></a>
+    </div>
+    <button class="row-arrow right" aria-label="Scroll right">›</button>
+  </div>
+</section>
+
+<!-- THE FULL STORY (RESUME) -->
+<section id="resume" class="sec">
+  <p class="kicker">THE SCREENPLAY</p>
+  <h2 class="sec-title">THE FULL STORY</h2>
+  <div class="resume-grid">
+    <article class="paper">
+      <header>
+        <h3>NAGA VENKATA LAKSHMAN MUCHARLA</h3>
+        <p class="contact">nvlakshman99@gmail.com · +91 9704883899 · Valluru, Andhra Pradesh, India</p>
+      </header>
+
+      <h4 class="rl">PROFESSIONAL SUMMARY</h4>
+      <p>Highly motivated and detail-oriented Computer Science student with a strong foundation in System Administration, Linux/Windows operating systems, networking, and server management. Familiar with DevOps tools, cloud platforms (AWS), and automation using Python and Shell scripting.</p>
+
+      <h4 class="rl">EDUCATION</h4>
+      <ul class="edu">
+        <li><div><b>Master of Computer Applications</b><br><span>SVKP &amp; Dr. K.S. Raju Arts and Science College (A), Penugonda</span></div><em>2024 – 2026<br>CGPA 8.0</em></li>
+        <li><div><b>Bachelor of Science, MPCS</b><br><span>Aditya Degree College, Tadepalligudem</span></div><em>2019 – 2022<br>CGPA 6.9</em></li>
+        <li><div><b>Intermediate, MPC</b><br><span>Aditya Junior College, Tadepalligudem</span></div><em>2017 – 2019<br>CGPA 8.6</em></li>
+        <li><div><b>SSC</b><br><span>Ravindra Bharathi School, Tadepalligudem</span></div><em>2016 – 2017<br>CGPA 8.5</em></li>
+      </ul>
+
+      <h4 class="rl">PROJECT</h4>
+      <p><b>Smart Service — Vehicle Service Management System</b> <span class="muted">(Django, Python, SQLite, HTML/CSS/JS)</span></p>
+      <ul class="bul">
+        <li>Handles end-to-end service workflows for 2W/3W/4W vehicles.</li>
+        <li>OTP authentication, employee dashboard and worker assignment.</li>
+        <li>Multi-method payment processing and public service tracking via unique Tracking IDs.</li>
+      </ul>
+    </article>
+
+    <aside class="side">
+      <p class="side-h">Every episode, on one page.</p>
+      <p class="muted">Education, learning, projects, certifications and skills — all in a single download.</p>
+      <a class="btn btn-gold" href="assets/Lakshman_Resume.pdf" download>⬇ Download Resume</a>
+      <div class="stats">
+        <div><b>8.0</b><small>MCA CGPA</small></div>
+        <div><b>5</b><small>Certifications</small></div>
+        <div><b>1</b><small>Project</small></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- TOP MOMENTS -->
+<section id="moments" class="sec">
+  <p class="kicker">AWARDS SEASON</p>
+  <h2 class="sec-title">TOP MOMENTS</h2>
+  <div class="row-wrap">
+    <button class="row-arrow left" aria-label="Scroll left">‹</button>
+    <div class="row award-row">
+      <div class="award"><small>CERTIFIED</small><b>AWS DEVOPS</b><p>Sathya Technologies</p></div>
+      <div class="award"><small>INTERNSHIP</small><b>SALESFORCE ADMIN</b><p>Salesforce Administration Internship</p></div>
+      <div class="award"><small>CERTIFIED</small><b>C PROGRAMMING</b><p>Cisco</p></div>
+      <div class="award"><small>CERTIFIED</small><b>JAVA</b><p>Oracle — Java Programming</p></div>
+      <div class="award"><small>CERTIFIED</small><b>PYTHON</b><p>Microsoft — Python Programming</p></div>
+      <div class="award"><small>COMMUNITY</small><b>EVENT ORGANIZER</b><p>Organized technical &amp; cultural events in college</p></div>
+      <div class="award"><small>COMMUNITY</small><b>BLOOD DONATION</b><p>Participated in blood donation camps</p></div>
+    </div>
+    <button class="row-arrow right" aria-label="Scroll right">›</button>
+  </div>
+</section>
+
+<!-- SKILL UNIVERSE -->
+<section id="skills" class="sec">
+  <p class="kicker">THE CAST</p>
+  <h2 class="sec-title">MY SKILL UNIVERSE</h2>
+  <div class="skill-wrap">
+    <ul class="skill-tabs" id="skillTabs" role="tablist"></ul>
+    <div class="skill-panel" id="skillPanel"></div>
+  </div>
+</section>
+
+<!-- ORIGINALS (PROJECTS) -->
+<section id="projects" class="sec">
+  <p class="kicker">ORIGINALS</p>
+  <h2 class="sec-title">MY PROJECTS</h2>
+  <div class="orig-grid">
+    <article class="orig orig-red">
+      <small>ORIGINAL · DJANGO · PYTHON</small>
+      <h3>SMART SERVICE</h3>
+      <p>A Django-based Vehicle Service Management System handling end-to-end service workflows for 2W/3W/4W vehicles — with OTP authentication, an employee dashboard, worker assignment, multi-method payments, and public tracking through unique Tracking IDs.</p>
+      <div class="tags"><span>Django</span><span>Python</span><span>SQLite</span><span>HTML/CSS/JS</span></div>
+      <a class="btn btn-light" href="https://github.com/Lakshman1803/smart-service" target="_blank" rel="noopener" id="repoLink">▶ View on GitHub</a>
+    </article>
+    <article class="orig orig-gold">
+      <small>COMING SOON</small>
+      <h3>NEXT EPISODE</h3>
+      <p>A DevOps pipeline with Docker and AWS is in the writers' room. Check back soon.</p>
+      <div class="tags"><span>Docker</span><span>AWS</span><span>Shell</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="sec">
+  <p class="kicker">THE FILMS</p>
+  <h2 class="sec-title">ABOUT ME</h2>
+  <div class="about-grid">
+    <div class="about-photo"><div class="avatar xl wide" data-initials="NL"></div></div>
+    <div class="about-copy">
+      <blockquote>“An MCA student who loves keeping systems running — Linux, networking, servers and cloud — and automating the boring parts with Python and Shell.”</blockquote>
+      <dl class="facts">
+        <div><dt>Degree</dt><dd>MCA, 2024 – 2026</dd></div>
+        <div><dt>Location</dt><dd>Valluru, Andhra Pradesh, India</dd></div>
+        <div><dt>Focus</dt><dd>System Administration, Linux, AWS, DevOps</dd></div>
+        <div><dt>Languages</dt><dd>C, Java, Python (Basics)</dd></div>
+      </dl>
+      <div class="tags"><span>Linux</span><span>Windows</span><span>Networking</span><span>Server Management</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" class="sec">
+  <p class="kicker">THE SEASONS</p>
+  <h2 class="sec-title">MY JOURNEY</h2>
+  <div class="seasons">
+    <button class="season active" data-s="4">Season 4 · MCA</button>
+    <button class="season" data-s="3">Season 3 · B.Sc</button>
+    <button class="season" data-s="2">Season 2 · Intermediate</button>
+    <button class="season" data-s="1">Season 1 · SSC</button>
+  </div>
+  <div class="episode" id="episode"></div>
+</section>
+
+<!-- TOP PICKS -->
+<section id="picks" class="sec">
+  <p class="kicker">TOP 3 · RIGHT NOW</p>
+  <h2 class="sec-title">LAKSHMAN'S TOP PICKS</h2>
+  <div class="picks">
+    <a class="pick" href="#projects"><span class="rank">1</span><div><b>Smart Service</b><small>Django vehicle service platform</small></div></a>
+    <a class="pick" href="#moments"><span class="rank">2</span><div><b>AWS DevOps</b><small>Sathya Technologies</small></div></a>
+    <a class="pick" href="#journey"><span class="rank">3</span><div><b>MCA 2024 – 2026</b><small>CGPA 8.0</small></div></a>
+  </div>
+</section>
+
+<!-- TO BE CONTINUED -->
+<section id="contact" class="finale">
+  <p class="kicker center">THE NEXT EPISODE</p>
+  <h2 class="finale-title">TO BE CONTINUED…</h2>
+  <p class="finale-name">NAGA VENKATA LAKSHMAN MUCHARLA</p>
+  <p class="finale-role">SYSTEM ADMINISTRATOR · DEVOPS ENTHUSIAST</p>
+  <div class="finale-btns">
+    <a class="btn btn-red" href="mailto:nvlakshman99@gmail.com">▶ Let's Build</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/naga-venkata-lakshman-mucharla-50739a237/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn btn-ghost" href="https://github.com/Lakshman1803" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn btn-ghost" href="tel:+919704883899">Call</a>
+  </div>
+  <p class="finale-links"><a href="#" id="watchAgain">↺ Watch again</a> &nbsp; <a href="#home" id="replayIntro">↺ Replay opening</a></p>
+  <footer>© 2026 Naga Venkata Lakshman Mucharla. All episodes reserved.</footer>
+</section>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
